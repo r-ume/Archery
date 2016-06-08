@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: b2563078c46720446a82d06cf6b06ac0
+timeCreated: 1458948129
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arrow
+    100002: bow
+    100004: bow_wood
+    100006: //RootNode
+    100008: drawstring
+    100010: target
+    100012: IK_Handle
+    100014: ikHandle1
+    100016: ikHandle2
+    100018: joint1
+    100020: joint10
+    100022: joint2
+    100024: joint3
+    100026: joint4
+    100028: joint5
+    100030: joint6
+    100032: joint7
+    100034: joint8
+    100036: joint9
+    400000: arrow
+    400002: bow
+    400004: bow_wood
+    400006: //RootNode
+    400008: drawstring
+    400010: target
+    400012: IK_Handle
+    400014: ikHandle1
+    400016: ikHandle2
+    400018: joint1
+    400020: joint10
+    400022: joint2
+    400024: joint3
+    400026: joint4
+    400028: joint5
+    400030: joint6
+    400032: joint7
+    400034: joint8
+    400036: joint9
+    2300000: arrow
+    2300002: bow_wood
+    2300004: drawstring
+    2300006: target
+    2300008: bow
+    3300000: arrow
+    3300002: bow_wood
+    3300004: drawstring
+    3300006: target
+    3300008: bow
+    4300000: arrow
+    4300002: target
+    4300004: bow_wood
+    4300006: drawstring
+    4300008: bow
+    7400000: Idle
+    7400002: Draw
+    9500000: //RootNode
+    13700000: bow
+    13700002: drawstring
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      - path: bow/drawstring
+        weight: 1
+      - path: bow/IK_Handle
+        weight: 1
+      - path: bow/IK_Handle/ikHandle1
+        weight: 1
+      - path: bow/IK_Handle/ikHandle2
+        weight: 1
+      - path: bow/joint1
+        weight: 1
+      - path: bow/joint1/joint2
+        weight: 1
+      - path: bow/joint1/joint2/joint3
+        weight: 1
+      - path: bow/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: bow/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: bow/joint6
+        weight: 1
+      - path: bow/joint6/joint7
+        weight: 1
+      - path: bow/joint6/joint7/joint8
+        weight: 1
+      - path: bow/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: bow/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: target
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Draw
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arrow
+        weight: 1
+      - path: bow
+        weight: 1
+      - path: bow/drawstring
+        weight: 1
+      - path: bow/IK_Handle
+        weight: 1
+      - path: bow/IK_Handle/ikHandle1
+        weight: 1
+      - path: bow/IK_Handle/ikHandle2
+        weight: 1
+      - path: bow/joint1
+        weight: 1
+      - path: bow/joint1/joint2
+        weight: 1
+      - path: bow/joint1/joint2/joint3
+        weight: 1
+      - path: bow/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: bow/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: bow/joint6
+        weight: 1
+      - path: bow/joint6/joint7
+        weight: 1
+      - path: bow/joint6/joint7/joint8
+        weight: 1
+      - path: bow/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: bow/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: target
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
