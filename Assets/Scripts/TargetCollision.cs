@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TargetCollision : MonoBehaviour {
 
+	// attached to target prefab.
     [SerializeField]
     private GameObject impactParticles;
 

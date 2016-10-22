@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TargetMovement : MonoBehaviour {
 
+	// attached to target prehab.
 	[SerializeField]
 	private float amplitude = 1f;
 
@@ -25,12 +26,12 @@ public class TargetMovement : MonoBehaviour {
 		//store the start position
 		startPosition = transform.localPosition;
 
-	
 	}
 	
 	void LateUpdate () {
 
 		// caluculate the data
+		// this variable theta can have negative value in it, which means the target moves in both right and left direction.
 		float theta = Mathf.Sin(Time.timeSinceLevelLoad / timePeriod);
 
 		// create the new delta position

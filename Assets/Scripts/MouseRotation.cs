@@ -3,11 +3,12 @@ using System.Collections;
 
 public class MouseRotation : MonoBehaviour {
 
+	// attached to bow
 	[SerializeField]
 	private Vector2 rotationRange = new Vector3(50, 95);
 
 	[SerializeField]
-	private float rotationSensitivity = 0.5f;
+	private float rotationSensitivity = 1f;
 
 	private Vector3 targetAngle;
 	private Quaternion startRotation;
@@ -28,10 +29,12 @@ public class MouseRotation : MonoBehaviour {
 		targetAngle.x += Input.GetAxis("Mouse Y") * rotationSensitivity;
 
 		// Lock the X and Y target angles to the rotation range.
+		// Clamps a value between a minimum float and maximum float value.
 		targetAngle.x = Mathf.Clamp(targetAngle.x, -rotationRange.x * 0.5f, rotationRange.x * 0.5f);
 		targetAngle.y = Mathf.Clamp(targetAngle.y, -rotationRange.y * 0.5f, rotationRange.y * 0.5f);
 
 		// Update the rotation of the game object by multiplying the start rotation by the target angle rotation.
+		// Euler - Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis
 		transform.localRotation = startRotation * Quaternion.Euler(-targetAngle.x, targetAngle.y, 0);
 	
 	}

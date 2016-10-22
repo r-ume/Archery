@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+	// attached to GameManager gameobject
     [SerializeField]
     private float gameLengthInSeconds;
 
@@ -45,10 +46,7 @@ public class GameManager : MonoBehaviour {
         gameStateAnimation.SetBool("show", true);
         timer = gameLengthInSeconds;
 
-        
-
         UpdateScoreBoard();
-
     }
 
 
@@ -67,9 +65,9 @@ public class GameManager : MonoBehaviour {
         if (gameStarted) {
 
             // Reset the timer and update the scoreboard.
+			// decrease time
             timer -= Time.deltaTime;
             UpdateScoreBoard();
-		
         }
 
 
@@ -77,7 +75,7 @@ public class GameManager : MonoBehaviour {
 			EndGame ();
         }
 
-
+		// when escape is pressed, the game stops.
         if (Input.GetKeyUp(KeyCode.Escape)) {
             Application.Quit();
         }
@@ -100,14 +98,12 @@ public class GameManager : MonoBehaviour {
 
 
 	private void startGame(){
-	
 		score = 0;
 		gameStarted = true;
 		arrowsFired = 0;
 		gameStateAnimation.SetBool("show", false);
 		gameStateSounds.clip = gameStartSound;
 		gameStateSounds.Play();
-
 	}
 
 	private void EndGame(){
@@ -117,7 +113,5 @@ public class GameManager : MonoBehaviour {
 		timer = gameLengthInSeconds;
 		gameStateSounds.clip = gameEndSound;
 		gameStateSounds.Play();
-
-
 	}
 }

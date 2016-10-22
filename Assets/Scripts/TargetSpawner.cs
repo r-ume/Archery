@@ -15,7 +15,6 @@ public class TargetSpawner : MonoBehaviour {
 	private GameObject targetPrefab;
 
 
-	
 	// Update is called once per frame
 	void Update () {
 		
@@ -62,7 +61,6 @@ public class TargetSpawner : MonoBehaviour {
 	private void DestroyTargets(){
 
 		totalTargets = 0;
-
 
 		GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
 		for (int i = 0; i < targets.Length; i++) {

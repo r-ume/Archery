@@ -77,11 +77,14 @@ public class ShootArrow : MonoBehaviour {
 	private void PowerUpBow(){
 		// Increment timer once per frame...
 		currentLerpTime += Time.deltaTime;
+		// To set he maximum amount of lerp as 1f. lerp = Linear Interpolation
 		if (currentLerpTime > lerpTime)
 			currentLerpTime = lerpTime;
 
 		// Lerp the arrow force the longer the player holds down the button.
 		float perc = currentLerpTime / lerpTime;
+
+		// distance from the bow to the target
 		arrowForce = Mathf.Lerp(0f, maximumArrowForce, perc);
 	}
 
@@ -90,8 +93,12 @@ public class ShootArrow : MonoBehaviour {
 		bowAnimator.SetBool ("drawing", false);
 
 		// Launch the arrow.
+		// instantiate - returns the copy
+		//Instantiate(Object original, Vector3 position, Quaternion rotation);
 		GameObject arrowInstance = Instantiate (arrowPrefab, arrowPosition.position, transform.rotation) as GameObject;
 		arrowInstance.GetComponent<Rigidbody> ().AddForce (transform.forward * arrowForce);
+
+		// increment the number of the arrow.
 		GameManager.arrowsFired++;
 
 		// Stop the stretch sound.
